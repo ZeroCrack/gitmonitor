@@ -47,5 +47,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           secretKey: ${{ secrets.DINGDING_SECRETKEY }}
           webhook: ${{ secrets.DINGDING_WEBHOOK }}
-        run: echo Hello, world!
+        run: python3 ./main.py
 

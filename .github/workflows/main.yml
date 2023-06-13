@@ -7,7 +7,7 @@ name: CI
 on:
   # 当对分支master进行push操作的时候，这个工作流就被触发了
   schedule:
-    - cron: '0 30 10 * * ?'
+    - cron: '*/5 * * * *'
 
   # 允许你手动在Github网页上执行该workflow
   workflow_dispatch:

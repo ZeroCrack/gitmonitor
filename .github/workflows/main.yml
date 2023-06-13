@@ -17,8 +17,7 @@ on:
 jobs:
   # 这个jobs中的一个任务，名字叫做build（任务的名字是自己取的）
   build:
-    env:
-      TZ: Asia/Shanghai
+
     # 用来指定这个任务在什么操作系统上面跑，此处运行在最新版本的ubuntu镜像上（服务器是Github免费提供的）
     runs-on: ubuntu-latest
 

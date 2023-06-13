@@ -7,7 +7,7 @@ name: CI
 on:
   # 当对分支master进行push操作的时候，这个工作流就被触发了
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 4 * * *'
 
   # 允许你手动在Github网页上执行该workflow
   workflow_dispatch:
@@ -30,3 +30,8 @@ jobs:
       # 步骤 运行单行命令 输出Hello, world!
       - name: Run a one-line script
         run: echo Hello, world!
+        
+      - name: Set up Python3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.6'

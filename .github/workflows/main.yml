@@ -27,11 +27,6 @@ jobs:
       # 将你的job指向你的文件目录$GITHUB_WORKSPACE，用来运行你的脚本
       - name: checkout
       - uses: actions/checkout@v3
-
-      - name: Set up Python3
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.6'
           
 
 
